@@ -1,0 +1,100 @@
+{
+  "planHash": "8ca8ac1bdf7d575383f87fabf337ba552cb32f6a6f57a6329a3180011dd77e8a",
+  "phase": "baseline",
+  "recordedAtUtc": "2026-10-05T19:01:05.8587631Z",
+  "retryCount": 0,
+  "resetBaseline": true,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E WTF-what-the-fashion@0.0.0 build\r\n\u003E vite build\r\n\r\n\u001B[36mvite v8.3.1 \u001B[32mbuilding client environment for production...\u001B[36m\u001B[39m\r\ntransforming...\r\n\r\n\u001B[1m\u001B[33mwarn\u001B[39m\u001B[22m - The class \u0060duration-[900ms]\u0060 is ambiguous and matches multiple utilities.\r\n\u001B[1m\u001B[33mwarn\u001B[39m\u001B[22m - If this is content and not a class, replace it with \u0060duration-\u0026lsqb;900ms\u0026rsqb;\u0060 to silence this warning.\r\n\u2713 3015 modules transformed.\r\nrendering chunks...\r\ncomputing gzip size...\r\ndist/index.html                   1.72 kB \u2502 gzip:   0.83 kB\r\ndist/assets/index-DGX2NSEP.css   86.78 kB \u2502 gzip:  15.82 kB\r\ndist/assets/index-B5W3Qae0.js   837.08 kB \u2502 gzip: 247.07 kB\r\n\r\n\u001B[33m[plugin builtin:vite-reporter] \r\n(!) Some chunks are larger than 500 kB after minification. Consider:\r\n- Using dynamic import() to code-split the application\r\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\r\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001B[39m\r\n\u001B[32m\u2713 built in 2.36s\u001B[39m\r\n",
+        "durationMs": 3238
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E WTF-what-the-fashion@0.0.0 test\r\n\u003E node --test\r\n\r\n\u2714 QueryClient fetches and caches a profile result (3.3844ms)\r\n\u2714 contact links normalize handles into public URLs (0.2766ms)\r\n\u2714 portfolio cover falls back to avatar and plural forms are selected (0.1829ms)\r\n\u2139 tests 3\r\n\u2139 suites 0\r\n\u2139 pass 3\r\n\u2139 fail 0\r\n\u2139 cancelled 0\r\n\u2139 skipped 0\r\n\u2139 todo 0\r\n\u2139 duration_ms 236.5706\r\n",
+        "durationMs": 952,
+        "testResults": {
+          "testFramework": "unknown",
+          "runnerDetectedFrom": "none",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      },
+      {
+        "name": "homepage-serves",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!doctype html\u003E\n\u003Chtml lang=\u0022ru\u0022\u003E\n  \u003Chead\u003E\n    \u003Cscript type=\u0022module\u0022\u003Eimport { injectIntoGlobalHook } from \u0022/@react-refresh\u0022;\ninjectIntoGlobalHook(window);\nwindow.$RefreshReg$ = () =\u003E {};\nwindow.$RefreshSig$ = () =\u003E (type) =\u003E type;\u003C/script\u003E\n\n    \u003Cscript type=\u0022module\u0022 src=\u0022/@vite/client\u0022\u003E\u003C/script\u003E\n\n    \u003Cmeta charset=\u0022UTF-8\u0022 /\u003E\n\n    \u003Clink\n      rel=\u0022icon\u0022\n      type=\u0022image/svg\u002Bxml\u0022\n      href=\u0022/logo-engine.svg\u0022\n    /\u003E\n\n    \u003Cmeta\n      name=\u0022viewport\u0022\n      content=\u0022width=device-width, initial-scale=1.0, viewport-fit=cover\u0022\n    /\u003E\n\n    \u003Clink rel=\u0022manifest\u0022 href=\u0022/manifest.json\u0022 /\u003E\n\n    \u003Ctitle\u003EWHAT THE FASHION \u2014 \u043B\u044E\u0434\u0438 \u0434\u043B\u044F fashion-\u0440\u0430\u0431\u043E\u0442\u044B\u003C/title\u003E\n\n    \u003Cmeta\n      name=\u0022description\u0022\n      content=\u0022WHAT THE FASHION \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 fashion-\u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u0430\u043C \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u044C \u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u043E\u0432, \u043C\u043E\u0434\u0435\u043B\u0435\u0439, \u0441\u0442\u0438\u043B\u0438\u0441\u0442\u043E\u0432, \u0432\u0438\u0437\u0430\u0436\u0438\u0441\u0442\u043E\u0432 \u0438 \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u043E\u0432 \u0434\u043B\u044F \u0442\u0432\u043E\u0440\u0447\u0435\u0441\u043A\u043E\u0439 \u0440\u0430\u0431\u043E\u0442\u044B.\u0022\n    /\u003E\n\n    \u003Cmeta\n      property=\u0022og:title\u0022\n      content=\u0022WHAT THE FASHION\u0022\n    /\u003E\n\n    \u003Cmeta\n      property=\u0022og:description\u0022\n      content=\u0022\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043B\u044E\u0434\u0435\u0439 \u0434\u043B\u044F \u0441\u044A\u0451\u043C\u043A\u0438, \u043F\u043E\u043A\u0430\u0437\u0430 \u0438 \u043A\u0430\u043C\u043F\u0430\u043D\u0438\u0438. \u041F\u043E\u0440\u0442\u0444\u043E\u043B\u0438\u043E, \u0433\u043E\u0440\u043E\u0434\u0430, \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F.\u0022\n    /\u003E\n\n    \u003Cmeta\n      property=\u0022og:type\u0022\n      content=\u0022website\u0022\n    /\u003E\n\n    \u003Cmeta\n      name=\u0022theme-color\u0022\n      content=\u0022#FFFFFF\u0022\n    /\u003E\n\n    \u003Clink\n      rel=\u0022preconnect\u0022\n      href=\u0022https://fonts.googleapis.com\u0022\n    /\u003E\n\n    \u003Clink\n      rel=\u0022preconnect\u0022\n      href=\u0022https://fonts.gstatic.com\u0022\n      crossorigin\n    /\u003E\n\n    \u003Clink\n      href=\u0022https://fonts.googleapis.com/css2?family=Playfair\u002BDisplay:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600\u0026family=Inter\u002BTight:wght@400;500;600\u0026display=swap\u0022\n      rel=\u0022stylesheet\u0022\n    /\u003E\n  \u003C/head\u003E\n\n  \u003Cbody\u003E\n    \u003Cdiv id=\u0022root\u0022\u003E\u003C/div\u003E\n\n    \u003Cscript\n      type=\u0022module\u0022\n      src=\u0022/src/Main.jsx\u0022\n    \u003E\u003C/script\u003E\n  \u003C/body\u003E\n\u003C/html\u003E\n--- server output ---\n\r\n\u003E WTF-what-the-fashion@0.0.0 dev\r\n\u003E vite --host 127.0.0.1\r\n\r\n\u001B[2m10:01:04 PM\u001B[22m \u001B[36m\u001B[1m[vite]\u001B[22m\u001B[39m \u001B[90m\u001B[2m(client)\u001B[22m\u001B[39m Re-optimizing dependencies because vite config has changed\r\n\r\n  \u001B[32m\u001B[1mVITE\u001B[22m v8.3.1\u001B[39m  \u001B[2mready in \u001B[0m\u001B[1m1538\u001B[22m\u001B[2m\u001B[0m ms\u001B[22m\r\n\r\n  \u001B[32m\u279C\u001B[39m  \u001B[1mLocal\u001B[22m:   \u001B[36mhttp://127.0.0.1:\u001B[1m5173\u001B[22m/\u001B[39m\r\n",
+        "durationMs": 2354
+      }
+    ],
+    "executions": [
+      {
+        "source": "production-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "E:\\startup-fashion\\WTF-what-the-fashion",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "test"
+        ],
+        "cwd": "E:\\startup-fashion\\WTF-what-the-fashion",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "homepage-serves",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "dev",
+          "--",
+          "--host",
+          "127.0.0.1"
+        ],
+        "cwd": "E:\\startup-fashion\\WTF-what-the-fashion",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}
