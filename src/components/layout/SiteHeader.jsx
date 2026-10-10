@@ -80,7 +80,8 @@ export default function SiteHeader() {
   const links = user
     ? [
         { to: "/creators", label: "Специалисты" },
-        { to: "/selected", label: "Выбранные", count: ids.length },
+        { to: "/projects", label: "Проекты" },
+        // { to: "/selected", label: "Выбранные", count: ids.length },
         { to: "/profile/requests", label: "Предложения" },
         // { to: "/profile", label: "Мой профиль", end: true },
       ]

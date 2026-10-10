@@ -42,6 +42,9 @@ import MyProfile from "@/pages/MyProfile";
 import ProfileEdit from "@/pages/ProfileEdit";
 import Requests from "@/pages/Requests";
 import Notifications from "@/pages/Notifications";
+import Projects from "@/pages/Projects";
+import ProjectCreate from "@/pages/ProjectCreate";
+import ProjectDetail from "@/pages/ProjectDetail";
 
 // Authentication pages
 import Login from "@/pages/Login";
@@ -216,6 +219,33 @@ function AuthenticatedApp() {
           element={
             <ProtectedRoute>
               <Requests />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/projects"
+          element={
+            <ProtectedRoute>
+              <Projects />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/projects/new"
+          element={
+            <ProtectedRoute>
+              <ProjectCreate />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/projects/:projectId"
+          element={
+            <ProtectedRoute>
+              <ProjectDetail />
             </ProtectedRoute>
           }
         />
