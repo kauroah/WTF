@@ -5,12 +5,12 @@ import { createClient } from "@supabase/supabase-js";
  *
  * Required in .env.local:
  *
- * VITE_SUPABASE_URL=https://your-project.supabase.co
- * VITE_SUPABASE_PUBLISHABLE_KEY=your_publishable_key
+ * NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+ * NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_publishable_key
  */
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabasePublishableKey =
-  import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 const safeStorage =
   typeof window !== "undefined" && window.localStorage
     ? window.localStorage
@@ -22,13 +22,13 @@ const safeStorage =
  */
 if (!supabaseUrl) {
   throw new Error(
-    "Missing VITE_SUPABASE_URL. Add it to your .env.local file."
+    "Missing NEXT_PUBLIC_SUPABASE_URL. Add it to your .env.local file."
   );
 }
 
 if (!supabasePublishableKey) {
   throw new Error(
-    "Missing VITE_SUPABASE_PUBLISHABLE_KEY. Add it to your .env.local file."
+    "Missing NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY. Add it to your .env.local file."
   );
 }
 

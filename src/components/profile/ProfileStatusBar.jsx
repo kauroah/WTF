@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/navigation";
 import { ExternalLink, Pencil, Send } from "lucide-react";
 
 import { useProfileSave } from "@/hooks/useProfileSave";

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "@/lib/navigation";
 import { Eye, Save } from "lucide-react";
 import { useProfileSave } from "@/hooks/useProfileSave";
 import { toForm, toRecord, validateAllAsync } from "@/lib/profileForm";

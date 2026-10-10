@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/navigation";
 import { motion } from "framer-motion";
 import { plural } from "@/lib/wtf";
 

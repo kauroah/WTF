@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/navigation";
 import { FileText } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import SectionHead from "@/components/shared/SectionHead";

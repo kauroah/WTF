@@ -1,10 +1,10 @@
 import React from "react";
-import { Outlet, useLocation } from "react-router-dom";
+import { useLocation } from "@/lib/navigation";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import ShortlistBar from "@/components/layout/ShortlistBar";
 
-export default function SiteLayout() {
+export default function SiteLayout({ children }) {
   const { pathname } = useLocation();
   const hideBar = pathname === "/selected" || pathname.startsWith("/onboarding") || pathname.startsWith("/profile/edit");
   return (
@@ -14,7 +14,7 @@ export default function SiteLayout() {
       </a>
       <SiteHeader />
       <main id="main" className="flex-1">
-        <Outlet />
+        {children}
       </main>
       <SiteFooter />
       {!hideBar && <ShortlistBar />}

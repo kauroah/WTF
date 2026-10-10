@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "@/lib/navigation";
 import { Image } from "@/components/ui/image";
 import SelectButton from "@/components/creators/SelectButton";
 import { coverOf, pad, roleNames, specNames } from "@/lib/wtf";

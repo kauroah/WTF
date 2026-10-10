@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from "react";
 
 const KEY = "wtf-selected";
+const EMPTY_IDS = Object.freeze([]);
 const listeners = new Set();
 
 function readStoredIds() {
@@ -42,8 +43,15 @@ const subscribe = (cb) => {
   return () => listeners.delete(cb);
 };
 
+const getSnapshot = () => cache;
+const getServerSnapshot = () => EMPTY_IDS;
+
 export function useShortlist() {
-  const ids = useSyncExternalStore(subscribe, () => cache);
+  const ids = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot
+  );
 
   return {
     ids,

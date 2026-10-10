@@ -5,7 +5,7 @@ export default {
   darkMode: ["class"],
 
   content: [
-    "./index.html",
+    "./app/**/*.{ts,tsx,js,jsx}",
     "./src/**/*.{ts,tsx,js,jsx}",
   ],
 

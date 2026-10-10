@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/navigation";
 import { Image } from "@/components/ui/image";
 
 const IMG = "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&q=80";

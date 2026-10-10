@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/navigation";
 import { requireLogin } from "@/hooks/useCurrentUser";
 
 export default function MobileMenu({ links, user, onNavigate }) {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/navigation";
 import { usePublishedCreators } from "@/pages/Creators";
 import SectionHead from "@/components/shared/SectionHead";
 import CreatorGrid from "@/components/creators/CreatorGrid";

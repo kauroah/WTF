@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/navigation";
 import { Bell, CheckCheck } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
 import { ru } from "date-fns/locale";

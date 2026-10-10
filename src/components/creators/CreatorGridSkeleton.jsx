@@ -2,11 +2,11 @@ import React from "react";
 
 export default function CreatorGridSkeleton({ count = 8 }) {
   return (
-    <div className="grid grid-cols-2 gap-x-3 gap-y-12 md:grid-cols-3 md:gap-x-6 lg:grid-cols-4" aria-busy="true" aria-label="Загрузка специалистов">
+    <div className="columns-1 gap-8 sm:columns-2 md:columns-3 md:gap-12" aria-busy="true" aria-label="Загрузка специалистов">
       {Array.from({ length: count }).map((_, i) => (
-        <div key={i}>
-          <div className="skeleton aspect-[3/4]" />
-          <div className="skeleton mt-4 h-6 w-3/4" />
+        <div key={i} className="mb-8 inline-block w-full break-inside-avoid md:mb-12">
+          <div className={`skeleton ${i % 3 === 1 ? "aspect-[4/3]" : i % 3 === 2 ? "aspect-[3/5]" : "aspect-[3/4]"}`} />
+          <div className="skeleton mt-3 h-6 w-3/4" />
           <div className="skeleton mt-2 h-3 w-1/2" />
         </div>
       ))}

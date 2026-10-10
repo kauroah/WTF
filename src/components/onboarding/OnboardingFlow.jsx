@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@/lib/navigation";
 import { ArrowRight } from "lucide-react";
 import { useProfileSave } from "@/hooks/useProfileSave";
 import { toForm, toRecord, validateStepAsync, validateAllAsync, firstStepWithError } from "@/lib/profileForm";

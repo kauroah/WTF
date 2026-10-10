@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useShortlist } from "@/hooks/useShortlist";

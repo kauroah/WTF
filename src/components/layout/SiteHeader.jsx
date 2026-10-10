@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "@/lib/navigation";
 import { LogOut, Search, Heart, User } from "lucide-react";
 import { useCurrentUser, requireLogin } from "@/hooks/useCurrentUser";
 import { useShortlist } from "@/hooks/useShortlist";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/navigation";
 import { Check, X } from "lucide-react";
 import { format } from "date-fns";
 import { ru } from "date-fns/locale";
